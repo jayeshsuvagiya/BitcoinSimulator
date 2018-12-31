@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Btcsim · Phoenix Framework</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+  </head>
+  <body>
+   <div class="page-wrapper">
+
+     <div class="page-container">
+     <header class="header-desktop">
+                     <div class="section__content section__content--p30">
+                         <div class="container-fluid">
+                             <div class="header-wrap">
+                                 <div class="header-button">
+                                            <i class="fab fa-bitcoin" style="font-size: 48px;"></i>
+                                     </div>
+                                     <div class="text">
+                                     <h2>Bitcoin Simulator</h2>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
+                 </header>
+                  <div class="main-content">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+      </div>
+    </div>
+   </div>
+   <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

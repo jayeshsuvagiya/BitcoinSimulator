@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TemplateDataLanguageMappings">
+    <file url="file://$PROJECT_DIR$/lib/btcsim_web/templates/layout/app.html.eex" dialect="HTML" />
+    <file url="file://$PROJECT_DIR$/lib/btcsim_web/templates/page/index_main.html.eex" dialect="HTML" />
+  </component>
+</project>

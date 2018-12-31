@@ -1,0 +1,6 @@
+ <tr>
+                                                <td><%= @time_now %></td>
+                                                <td><%= @from %></td>
+                                                <td><%= @to %></td>
+                                                <td class="text-right"><%= @amount %></td>
+                                            </tr>

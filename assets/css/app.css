@@ -1,0 +1,14 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+@import "./theme.css";
+
+
+@import "./bootstrap.min.css";
+@import "./animsition.min.css";
+@import "./bootstrap-progressbar-3.3.4.min.css";
+@import "./animate.css";
+@import "./hamburgers.css";
+@import "./slick.css";
+@import "./select2.min.css";
+@import "./perfect-scrollbar.css";
